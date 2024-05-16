@@ -82,8 +82,8 @@ export default function Finances() {
 
   if (loading) {
     return (
-      <Container>
-        <LoaderCircle className="align-center ml-1 animate-spin" size={60} />
+      <Container className="flex items-center justify-center w-full min-h-[342px]">
+        <LoaderCircle className="animate-spin" size={40} />
       </Container>
     );
   }
@@ -117,9 +117,9 @@ export default function Finances() {
           <LandmarkIcon size={52} className="mt-14" />
           <div className="flex flex-col items-center gap-y-1">
             <h1 className="text-xl font-medium"> Financial account </h1>
-            <p className="font-normal text-subdued">
+            <p className="text-center text-subdued">
               A financial account allows you to access loans, create cards, and
-              more. Learn more
+              more.
             </p>
           </div>
           <Button className="mb-14" onClick={onClick} disabled={buttonLoading}>
